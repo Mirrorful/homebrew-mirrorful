@@ -5,11 +5,11 @@
 class Mirrorful < Formula
   desc ""
   homepage "https://github.com/Mirrorful/mirrorful"
-  version "0.1.5"
+  version "0.1.6"
 
   on_macos do
-    url "https://github.com/Mirrorful/mirrorful/releases/download/v0.1.5/mirrorful_0.1.5_darwin_all.tar.gz"
-    sha256 "ed3fd20d5244f7854ef1d8a4c41da14cb5f4912561f4a4cb864ff6f147883206"
+    url "https://github.com/Mirrorful/mirrorful/releases/download/v0.1.6/mirrorful_0.1.6_darwin_all.tar.gz"
+    sha256 "4bce435f82d2d693cd8ecfe442795bc598d098ad5e48542d4d7d1bb6ea606505"
 
     def install
       bin.install "mirrorful"
@@ -18,19 +18,19 @@ class Mirrorful < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Mirrorful/mirrorful/releases/download/v0.1.5/mirrorful_0.1.5_linux_arm64.tar.gz"
-      sha256 "216e1ffcb81a8452c6d1b3f8dfa4a97243a6048242a15ba14f1cca9e7ae475da"
+      url "https://github.com/Mirrorful/mirrorful/releases/download/v0.1.6/mirrorful_0.1.6_linux_arm64.tar.gz"
+      sha256 "79e250067d92aa1236ec828029729104a720d104550c1646044c8e1aec5d14fc"
 
       def install
-        bin.install "mirrorful-cli"
+        bin.install "mirrorful"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Mirrorful/mirrorful/releases/download/v0.1.5/mirrorful_0.1.5_linux_amd64.tar.gz"
-      sha256 "ac6809a70d5626157642419494d3b4673fddfed5da74ae2e62baa45aa4d3b6d4"
+      url "https://github.com/Mirrorful/mirrorful/releases/download/v0.1.6/mirrorful_0.1.6_linux_amd64.tar.gz"
+      sha256 "27b3a46d45af6b0ea8bbe465cbf55949815757c6abe6a016788dc03c11818fed"
 
       def install
-        bin.install "mirrorful-cli"
+        bin.install "mirrorful"
       end
     end
   end
